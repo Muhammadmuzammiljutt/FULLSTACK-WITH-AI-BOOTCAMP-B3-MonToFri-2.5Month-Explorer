@@ -19,8 +19,7 @@ for row in table.find_all('div',
     quote['theme'] = row.h5.text
     quote['url'] = row.a['href']
     quote['img'] = row.img['src']
-    quote['lines'] = row.img['alt'].split(" ")[0]
-    quote['author'] = row.img['alt'].split(" ")[1]
+    quote['lines'] = row.img['alt']
     quotes.append(quote)
  
 filename = 'Week3/inspirational_quotesMethod1-BeauitfulSoup.csv'
