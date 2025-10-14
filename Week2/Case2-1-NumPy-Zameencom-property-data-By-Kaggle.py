@@ -22,6 +22,7 @@ print("Zameen.com Price max : " , np.max(price))
 # Zameen.com price  - maths operations
 print("Zameen.com Price square: " , np.square(price))
 print("Zameen.com Price sqrt: " , np.sqrt(price))
+
 print("Zameen.com Price pow: " , np.power(price,price))
 print("Zameen.com Price abs: " , np.abs(price))
 

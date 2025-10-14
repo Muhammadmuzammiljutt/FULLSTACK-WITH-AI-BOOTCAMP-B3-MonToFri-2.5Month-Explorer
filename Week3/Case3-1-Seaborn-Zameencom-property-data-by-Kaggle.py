@@ -87,7 +87,7 @@ figure.facecolor: Background color of the entire figure."""
 
 #Zameencom data - based examples
 # Load data from a CSV file
-df = pd.read_csv('Week3/zameencom-property-data-By-Kaggle-short.csv',delimiter=";", parse_dates=[14],  date_format={'date_added': '%m-%d-%Y'} , index_col='property_id')
+df = pd.read_csv('Week2/zameencom-property-data-By-Kaggle-short.csv',delimiter=";", parse_dates=[14],  date_format={'date_added': '%m-%d-%Y'} , index_col='property_id')
 
 print(df.dtypes)
 dffilter= df.head(40)
@@ -134,8 +134,8 @@ read = input("Wait for me....")
 
 """"kind="kde" in Seaborn specifies the use of Kernel Density Estimation plots. KDE plots visualize the probability density of a continuous variable. Instead of discrete bins like in histograms, KDE plots use a continuous curve to estimate the underlying distribution of the data. This provides a smoother and often more informative representation of the data's distribution, especially for continuous variables."""
 #kind='kde'
-g=sns.displot(data=dffilter, x="price" , y="date_added" , kind='kde'  )
-g.figure.suptitle("sns.displot(data=dffilter, x=price , y=date_added , kind='kde'  )"  )
+g=sns.displot(data=dffilter, x="agency" , y="data_added" , kind='kde'  )
+g.figure.suptitle("sns.displot(data=dffilter, x=agency , y=price , kind='kde'  )"  )
 
 # Display the plot
 g.figure.show()
